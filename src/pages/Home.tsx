@@ -1,9 +1,9 @@
-import PortalNavbar from '../components/PortalNavbar'
-import HeroSection from '../components/HeroSection'
-import NoticeBoard from '../components/NoticeBoard'
-import EcosystemHighlights from '../components/EcosystemHighlights'
-import Footer from '../components/Footer'
-import { useMemo } from 'react'
+import { useMemo } from 'react';
+import PortalNavbar from '../components/Portal/PortalNavbar';
+import HeroSection from '../components/Portal/HeroSection';
+import NoticeBoard from '../components/Portal/NoticeBoard';
+import RadioAtividadeSection from '../components/Portal/RadioAtividadeSection';
+import Footer from '../components/Portal/Footer';
 
 const Home = () => {
   const notices = useMemo(
@@ -35,7 +35,7 @@ const Home = () => {
       <PortalNavbar />
       <HeroSection />
       <NoticeBoard notices={notices} />
-      <EcosystemHighlights />
+      <RadioAtividadeSection />
       <Footer />
     </>
   )

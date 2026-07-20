@@ -5,8 +5,15 @@ const DashboardLayout = () => {
     <div className="dashboard d-flex min-vh-100 bg-light">
       <aside className="sidebar bg-white border-end shadow-sm p-3" style={{ width: 260 }}>
         <div className="mb-5">
-          <h5 className="fw-bold">EEPSAS LMS</h5>
-          <p className="text-muted small mb-0">Ambiente de Aprendizagem</p>
+          <div className="d-flex align-items-center justify-content-between gap-3 mb-3">
+            <div>
+              <h5 className="fw-bold mb-1">Portal EEPSAS</h5>
+              <p className="text-muted small mb-0">Ambiente de Aprendizagem</p>
+            </div>
+            <NavLink to="/" className="btn btn-sm btn-outline-primary">
+              Portal Público
+            </NavLink>
+          </div>
         </div>
         <nav className="nav flex-column gap-2">
           {[
