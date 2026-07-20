@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
-import PortalNavbar from '../components/Portal/PortalNavbar';
+import PortalLayout from '../layouts/PortalLayout';
 import HeroSection from '../components/Portal/HeroSection';
 import NoticeBoard from '../components/Portal/NoticeBoard';
 import RadioAtividadeSection from '../components/Portal/RadioAtividadeSection';
-import Footer from '../components/Portal/Footer';
+import EcosystemHighlights from '../components/Portal/EcosystemHighlights';
 
 const Home = () => {
   const notices = useMemo(
@@ -31,13 +31,12 @@ const Home = () => {
   )
 
   return (
-    <>
-      <PortalNavbar />
+    <PortalLayout>
       <HeroSection />
       <NoticeBoard notices={notices} />
       <RadioAtividadeSection />
-      <Footer />
-    </>
+      <EcosystemHighlights />
+    </PortalLayout>
   )
 }
 
